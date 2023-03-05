@@ -14,7 +14,6 @@ a {
   color: whitesmoke;
 }
 
-
 h1,
 h2,
 h3,
@@ -145,8 +144,20 @@ header{
     padding: 5px 0;
 }
 
+.msgPhone{
+    font-size: 16px;
+}
+
+.phones{
+    display: flex;
+    flex-direction: column;
+}
+
 .phoneNumb{
     font-weight: 600;
+    padding: 5px 0;
+    font-size: 16px;
+    color: #2a293e;
 }
 
 .topImgBlock{
@@ -169,14 +180,14 @@ header{
 }
 
 .navBarInfo{
-    flex: 0 1 300px;
+    flex: 1 0 350px;
     margin-right: 10px;
 }
 
 .barInfo{
     display: flex;
     flex-direction: column;
-    padding: 40px 40px 40px 20px;
+    padding: 20px 30px 20px 20px;
 }
 
 .barInfoItem{
@@ -186,9 +197,10 @@ header{
     width: fit-content;
 }
 
+
 .pageDetailInfo{
-    flex: 1 1 auto;
-    height: 400px;
+    flex: 1 1 500px;
+    min-height: 400px;
     margin-left: 10px;
 }
 
@@ -205,15 +217,50 @@ header{
     transform-origin: right top;
 }
 
-
 .barInfoItem:hover:after{
     transform: scaleX(1);
     transform-origin: left top;
 }
 
+.barItemHover.active{
+    color: tomato;
+}
+
 .barItemHover{
     color: #2a293e;
     text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.pageDetailInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+}
+
+.chapter{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 32px;
+    color: #F6B300;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+}
+
+.caption{
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.text{
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.postImg{
+    width: 75%;
 }
 
 @media (max-width: 1087px)
