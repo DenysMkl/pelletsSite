@@ -93,6 +93,7 @@ header{
 .menuBar .barItem:nth-child(even){
     border-left: 1px solid rgb(212, 209, 209);
     border-right: 1px solid rgb(212, 209, 209);
+    margin: 0;
 }
 
 .barItem{
@@ -185,8 +186,8 @@ header{
 }
 
 .barInfoItem{
-    padding: 10px;
     margin: 5px;
+    padding: 5px 0;
 }
 
 .line{
@@ -195,16 +196,13 @@ header{
 }
 
 .products{
-    display: none;
-}
-
-.dropdown:hover .products{
     display: flex;
     flex-direction: column;
     padding: 10px;
+
 }
 
-.dropdown:hover{
+.dropdown{
     padding-bottom: 0;
     margin-bottom: 0;
 }
@@ -247,6 +245,7 @@ header{
 
 .barItemHover.active{
     color: #F6B300;
+    font-size: 18px;
 }
 
 .barItemHover{
@@ -254,6 +253,7 @@ header{
     text-transform: uppercase;
     font-weight: 500;
     font-size: 16px;
+    padding: 5px 0;
 }
 
 .pageDetailInfo{
@@ -288,6 +288,26 @@ header{
 
 .linkToDetail{
     color: #F6B300;
+}
+
+footer{
+    border-top: 5px solid #E7DFD7;
+    background-color: #F1EDE4;
+    margin-top: 60px;
+}
+
+.footer_container{
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright{
+    color: #88837f;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 @media (max-width: 1087px)
