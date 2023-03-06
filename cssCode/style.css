@@ -111,10 +111,6 @@ header{
     padding: 10px;
 }
 
-.barItem:hover .barHover{
-    color: #3E282A;
-}
-
 .main_container{
     display: flex;
     flex-direction: column;
@@ -137,15 +133,13 @@ header{
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    padding: 10px;
     margin-right: 20px;
 }
 
-.contacts > *{
-    padding: 5px 0;
-}
-
 .msgPhone{
-    font-size: 16px;
+    font-size: 18px;
+    padding: 10px 0;
 }
 
 .phones{
@@ -193,10 +187,39 @@ header{
 .barInfoItem{
     padding: 10px;
     margin: 5px;
+}
+
+.line{
     position: relative;
     width: fit-content;
 }
 
+.products{
+    display: none;
+}
+
+.dropdown:hover .products{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.dropdown:hover{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.fa-angle-down{
+    transition: .3s;
+}
+
+.barInfoItem:hover .fa-angle-down{
+    transform: rotate(180deg);
+}
+
+.prodItems{
+    padding: 10px;
+}
 
 .pageDetailInfo{
     flex: 1 1 500px;
@@ -204,7 +227,7 @@ header{
     margin-left: 10px;
 }
 
-.barInfoItem:after{
+.line:after{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -217,13 +240,13 @@ header{
     transform-origin: right top;
 }
 
-.barInfoItem:hover:after{
+.line:hover:after{
     transform: scaleX(1);
     transform-origin: left top;
 }
 
 .barItemHover.active{
-    color: tomato;
+    color: #F6B300;
 }
 
 .barItemHover{
@@ -261,6 +284,10 @@ header{
 
 .postImg{
     width: 75%;
+}
+
+.linkToDetail{
+    color: #F6B300;
 }
 
 @media (max-width: 1087px)
