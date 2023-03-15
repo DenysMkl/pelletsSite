@@ -179,6 +179,50 @@ header{
     margin-right: 10px;
 }
 
+.langBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+    cursor: default;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+.swapLang{
+    display: none;
+    position: absolute;
+    top: 30px;
+    background-color: #3E282A;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.swapLang >*{
+    padding: 5px 10px;
+}
+
+.curLang{
+    transition: 1s;
+}
+
+.lang:hover{
+    background-color: rgb(123, 115, 115);
+    border-radius: 5px;
+}
+
+.curLang.active ~ .swapLang{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.curLang.active .fa-angle-down{
+    transform: rotate(180deg);
+}
+
 .barInfo{
     display: flex;
     flex-direction: column;
@@ -219,12 +263,6 @@ header{
     padding: 10px;
 }
 
-.pageDetailInfo{
-    flex: 1 1 500px;
-    min-height: 400px;
-    margin-left: 10px;
-}
-
 .line:after{
     position: absolute;
     bottom: 0;
@@ -259,7 +297,10 @@ header{
 .pageDetailInfo{
     display: flex;
     flex-direction: column;
-    padding: 30px 40px;
+    padding: 30px 25px;
+    flex: 1 1 500px;
+    min-height: 400px;
+    margin-left: 10px;
 }
 
 .chapter{
@@ -277,9 +318,16 @@ header{
 }
 
 .text{
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 16px;
     line-height: 1.5;
+    align-self: flex-start;
+}
+
+.post_prod{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .postImg{
@@ -308,6 +356,23 @@ footer{
     text-transform: uppercase;
     font-weight: 400;
     font-size: 16px;
+}
+
+.cap{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.postImg{
+    padding-bottom: 20px;
+}
+
+.lowWidthdisplay{
+    display: none;
+}
+
+.phoneBar{
+    display: none;
 }
 
 @media (max-width: 1087px)
